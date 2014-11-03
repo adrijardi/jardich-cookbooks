@@ -1,4 +1,7 @@
 {
+    "opsworks_initial_setup" : {
+        "swapfile_size_mb": 2048
+    },
     "java" : {
         "install_flavor": "oracle",
         "jdk_version" : "8",
@@ -10,7 +13,8 @@
         }
     },
     "run-list" : [
+        "recipe[opsworks_initial_setup]",
         "recipe[java]",
-        "recipe[opsworks_java]",
+        "recipe[opsworks_java]"
     ]
 }
