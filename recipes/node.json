@@ -1,0 +1,16 @@
+{
+    "java" : {
+        "install_flavor": "oracle",
+        "jdk_version" : "8",
+        "oracle" : {"accept_oracle_download_terms" : true}
+    },
+    "opsworks_java": {
+        "datasources": {
+            "admin": "jdbc/mydb"
+        }
+    },
+    "run-list" : [
+        "recipe[java]",
+        "recipe[opsworks_java]",
+    ]
+}

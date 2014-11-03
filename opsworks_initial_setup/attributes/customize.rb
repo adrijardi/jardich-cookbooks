@@ -1,0 +1,1 @@
+normal['opsworks_initial_setup']['swapfile_size_mb'] = 2048
