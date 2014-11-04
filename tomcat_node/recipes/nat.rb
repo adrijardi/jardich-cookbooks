@@ -1,3 +1,5 @@
+include_recipe "simple_iptables"
+
 # Tomcat redirects
 simple_iptables_rule "tomcat" do
   table "nat"
