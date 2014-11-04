@@ -1,0 +1,1 @@
+normal['opsworks_java']['tomcat']['apache_tomcat_bind_mod'] = 'proxy_ajp'
